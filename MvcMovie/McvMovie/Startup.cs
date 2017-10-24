@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using McvMovie.Models;
+using MvcMovie.Models;
 
-namespace McvMovie
+namespace MvcMovie
 {
     public class Startup
     {
@@ -25,7 +25,7 @@ namespace McvMovie
         {
             services.AddMvc();
 
-            services.AddDbContext<McvMovieContext>(options =>
+            services.AddDbContext<MvcMovieContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("McvMovieContext")));
         }
 

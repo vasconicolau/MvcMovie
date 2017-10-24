@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Models;
 
-namespace McvMovie.Models
+namespace MvcMovie.Models
 {
-    public class McvMovieContext : DbContext
+    public class MvcMovieContext : DbContext
     {
-        public McvMovieContext (DbContextOptions<McvMovieContext> options)
+        public MvcMovieContext (DbContextOptions<MvcMovieContext> options)
             : base(options)
         {
         }
